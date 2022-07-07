@@ -1,0 +1,55 @@
+# Movie Index
+GET http http://localhost:3000/movies.json
+
+# Movie Show
+GET http://localhost:3000/movies/3.json
+
+# Movie Create
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "Reign Over Me",
+  "year": 2007,
+  "plot": "Charlie Fineman (Adam Sandler), who lost his family in the terrorist attacks of Sept. 11, still grieves over their deaths. He runs into his former college roommate, Alan Johnson (Don Cheadle), and the two rekindle their friendship. Alan himself is feeling the strain of family and professional responsibilities, and his renewed bond with Charlie gives both men the strength to carry on during a turning point in their lives."
+}
+
+# Movie Update
+PATCH http://localhost:3000/movies/8.json
+Content-Type: application/json
+
+{
+  "title": "Change Movie Title"
+}
+
+# Movie Destory
+DELETE http://localhost:3000/movies/3.json
+
+###
+
+# Actor Index
+GET http://localhost:3000/actors.json
+
+# Actor Show
+GET http://localhost:3000/actors/2.json
+
+# Actor Create
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "Larry",
+  "last_name": "David",
+  "known_for": "Curb Your Enthusiasm"
+}
+
+# Actor Update
+PATCH http://localhost:3000/actors/5.json
+Content-Type: application/json
+
+{
+  "known_for": "Seinfeld"
+}
+
+# Actor Destory
+DELETE http://localhost:3000/actors/18.json
