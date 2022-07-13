@@ -1,10 +1,10 @@
-# Movie Index
+### Movie Index
 GET http http://localhost:3000/movies.json
 
-# Movie Show
+### Movie Show
 GET http://localhost:3000/movies/3.json
 
-# Movie Create
+### Movie Create
 POST http://localhost:3000/movies.json
 Content-Type: application/json
 
@@ -14,7 +14,7 @@ Content-Type: application/json
   "plot": "Charlie Fineman (Adam Sandler), who lost his family in the terrorist attacks of Sept. 11, still grieves over their deaths. He runs into his former college roommate, Alan Johnson (Don Cheadle), and the two rekindle their friendship. Alan himself is feeling the strain of family and professional responsibilities, and his renewed bond with Charlie gives both men the strength to carry on during a turning point in their lives."
 }
 
-# Movie Update
+### Movie Update
 PATCH http://localhost:3000/movies/8.json
 Content-Type: application/json
 
@@ -22,18 +22,18 @@ Content-Type: application/json
   "director": "Rob Reiner"
 }
 
-# Movie Destory
+### Movie Destory
 DELETE http://localhost:3000/movies/3.json
 
 ###
 
-# Actor Index
+### Actor Index
 GET http://localhost:3000/actors.json
 
-# Actor Show
+### Actor Show
 GET http://localhost:3000/actors/2.json
 
-# Actor Create
+### Actor Create
 POST http://localhost:3000/actors.json
 Content-Type: application/json
 
@@ -43,7 +43,7 @@ Content-Type: application/json
   "known_for": "Curb Your Enthusiasm"
 }
 
-# Actor Update
+### Actor Update
 PATCH http://localhost:3000/actors/5.json
 Content-Type: application/json
 
@@ -51,5 +51,5 @@ Content-Type: application/json
   "known_for": "Seinfeld"
 }
 
-# Actor Destory
+### Actor Destory
 DELETE http://localhost:3000/actors/18.json
