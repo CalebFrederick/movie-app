@@ -19,7 +19,7 @@ PATCH http://localhost:3000/movies/8.json
 Content-Type: application/json
 
 {
-  "title": "Change Movie Title"
+  "director": "Rob Reiner"
 }
 
 # Movie Destory
