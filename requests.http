@@ -1,3 +1,7 @@
+@jwt_admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgyMTExNTJ9.cdtT6WuNP9YUD7eZeJhEfx0BZlsWAQc0tsbx-5NK1rg
+
+@jwt_user = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTgyMTEyMzd9.0_ACeZNVT3LxSuiEGdsbP_6G4yhbvPhlG6QqPOHwSKo
+
 ### Movie Index
 GET http http://localhost:3000/movies.json
 
@@ -6,6 +10,7 @@ GET http://localhost:3000/movies/3.json
 
 ### Movie Create
 POST http://localhost:3000/movies.json
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
@@ -16,14 +21,16 @@ Content-Type: application/json
 
 ### Movie Update
 PATCH http://localhost:3000/movies/8.json
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
   "director": "Rob Reiner"
 }
 
-### Movie Destory
+### Movie Destroy
 DELETE http://localhost:3000/movies/3.json
+Authorization: Bearer {{jwt_admin}}
 
 ###
 
@@ -35,6 +42,7 @@ GET http://localhost:3000/actors/2.json
 
 ### Actor Create
 POST http://localhost:3000/actors.json
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
@@ -46,10 +54,32 @@ Content-Type: application/json
 ### Actor Update
 PATCH http://localhost:3000/actors/5.json
 Content-Type: application/json
+Authorization: Bearer {{jwt_admin}}
 
 {
   "known_for": "Seinfeld"
 }
 
-### Actor Destory
+### Actor Destroy
 DELETE http://localhost:3000/actors/18.json
+Authorization: Bearer {{jwt_admin}}
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Noodle Test",
+  "email": "Noodle@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "Noodle@test.com",
+  "password": "password"
+}
