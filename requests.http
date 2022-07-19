@@ -1,6 +1,6 @@
-@jwt_admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgyMTExNTJ9.cdtT6WuNP9YUD7eZeJhEfx0BZlsWAQc0tsbx-5NK1rg
+@jwt_admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgyNTU2NTN9.9Dk5ZjlPfNJ-tRxUWKDp7Bf2ihLdi9M8aMkFquLFVF8
 
-@jwt_user = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTgyMTEyMzd9.0_ACeZNVT3LxSuiEGdsbP_6G4yhbvPhlG6QqPOHwSKo
+@jwt_user = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTgyNTU4Njh9.Au3kyC-ORTkrgYE2-p0bjWqNvKU6BZUGTKjyHdGlwZY
 
 ### Movie Index
 GET http http://localhost:3000/movies.json
@@ -69,8 +69,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Noodle Test",
-  "email": "Noodle@test.com",
+  "name": "Rufus Test",
+  "email": "Rufuse@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -80,6 +80,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "Noodle@test.com",
+  "email": "Rufuse@test.com",
   "password": "password"
 }
