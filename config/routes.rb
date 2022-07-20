@@ -43,4 +43,8 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
 
   post "/sessions" => "sessions#create"
+
+  ### Movie_Genres Routes
+
+  post "/movie_genres" => "movie_genres#create", default: { format: :json }
 end

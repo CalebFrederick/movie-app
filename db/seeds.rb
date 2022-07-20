@@ -16,14 +16,18 @@ require 'ffaker'
 
 # movie = Movie.create({title: "The School of Rock", year: 2003, plot: "Overly enthusiastic guitarist Dewey Finn (Jack Black) gets thrown out of his bar band and finds himself in desperate need of work. Posing as a substitute music teacher at an elite private elementary school, he exposes his students to the hard rock gods he idolizes and emulates -- much to the consternation of the uptight principal (Joan Cusack). As he gets his privileged and precocious charges in touch with their inner rock 'n' roll animals, he imagines redemption at a local Battle of the Bands.", director: "Richard Linklater", english: true})
 
+# movie = Movie.create({title: "Chef", year: 2003, plot: "After a controlling owner (Dustin Hoffman) pushes him too far, chef Carl Casper (Jon Favreau) quits his position at a prestigious Los Angeles restaurant. As he tries to figure out what his next step should be, he finds himself in Miami. Carl joins forces with his ex-wife (Sofía Vergara), best friend (John Alberto Leguizamo) and son (Emjay Anthony) to launch a food-truck business, and the venture provides a chance to reignite his passion for cooking -- as well as his zest for life and love.", director: "Jon Favreau", english: true})
+
 # genre = Genre.create({name: "Action"})
 
 # genre = Genre.create({name: "Adventure"})
 
 # genre = Genre.create({name: "Comedy"})
 
-movie_genre = MovieGenre.create({genre_id: 1, movie_id: 1})
+# genre = Genre.create({name: "Drama"})
 
-movie_genre = MovieGenre.create({genre_id: 2, movie_id: 2})
+# movie_genre = MovieGenre.create({genre_id: 1, movie_id: 1})
 
-movie_genre = MovieGenre.create({genre_id: 3, movie_id: 3})
+# movie_genre = MovieGenre.create({genre_id: 2, movie_id: 2})
+
+# movie_genre = MovieGenre.create({genre_id: 3, movie_id: 3})
